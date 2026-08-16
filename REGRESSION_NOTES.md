@@ -63,3 +63,10 @@ No count-only expansion was needed: existing CommonJS catch, classic loop,
 identifier catches and loop declarations moved to binder identity; destructured
 forms intentionally remain on the legacy bridge. Result remains **491 pass / 0
 fail / 27 semantic-only skips** across 518 cases.
+
+## Checkpoint 22 — import identity and semicolonless CommonJS boundary
+
+Static value imports now have binder-owned symbol identity. A new emit contract
+protects semicolonless named imports after inspection found that the CommonJS pass
+could consume the following statement while searching for `;`. The corpus now
+contains **519 cases**, producing **492 pass / 0 fail / 27 semantic-only skips**.
