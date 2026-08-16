@@ -8,8 +8,8 @@ externally observable TypeScript-to-JavaScript behavior the project claims.
 
 - Runner: `run.py --tscc /absolute/path/to/tscc`.
 - Corpus: `cases.json`.
-- Current retained checkpoint: 511 cases; 483 pass, zero fail, 28
-  semantic-checker-only skips.
+- Current retained checkpoint: 511 cases; 484 pass, zero fail, 27
+  semantic-checker-only skips after the first bounded checker slice.
 - Oracles: TypeScript `tsc --noCheck`, full `tsc` for semantic-only
   classification, and Node for runtime cases.
 
@@ -30,11 +30,11 @@ tests for transforms. Exact output snapshots are useful but do not prove semanti
 
 ## Local/standalone relationship
 
-An equivalent suite exists at `tscc/regression`. At the handover checkpoint,
-runner/cases/bug-log substance matches while this repository's
-`REGRESSION_NOTES.md` contains newer checkpoint notes. The canonical direction is
-not encoded strongly enough. Establish one owner and an automated comparison
-before future divergence. Do not duplicate tests manually indefinitely.
+An executable mirror exists at `tscc/regression`. This standalone repository is
+the canonical external contract owner; the implementation repository provides
+`make check-regression-sync` to compare `cases.json` and `run.py`. This
+repository's `REGRESSION_NOTES.md` contains suite-owned checkpoint notes. Update
+the standalone contract first and synchronize the mirror in the same checkpoint.
 
 ## Running and environment
 
