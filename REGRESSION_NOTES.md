@@ -48,3 +48,10 @@ Promoted primitive additive-result and invalid-arithmetic contracts. The checker
 now evaluates a bounded expression grammar with parentheses, unary operators and
 arithmetic precedence over literals and bound identifiers. Current result:
 **489 pass / 0 fail / 27 semantic-only skips** across 516 cases.
+
+## Checkpoint 20 — assignment and mutability
+
+Promoted const-reassignment and primitive compound-assignment contracts. The full
+corpus exposed and retained the classification lesson that private names such as
+`#x` are not ordinary lexical references to `x`. Current result: **491 pass / 0
+fail / 27 semantic-only skips** across 518 cases.
