@@ -41,3 +41,10 @@ Promoted two semantic contracts for annotated primitive types flowing through a
 bound identifier: one initializer mismatch and one direct assignment mismatch.
 Both are shadow-aware through symbol identity. Current result: **487 pass / 0
 fail / 27 semantic-only skips** across 514 cases.
+
+## Checkpoint 19 — primitive expression typing
+
+Promoted primitive additive-result and invalid-arithmetic contracts. The checker
+now evaluates a bounded expression grammar with parentheses, unary operators and
+arithmetic precedence over literals and bound identifiers. Current result:
+**489 pass / 0 fail / 27 semantic-only skips** across 516 cases.
