@@ -55,3 +55,11 @@ Promoted const-reassignment and primitive compound-assignment contracts. The ful
 corpus exposed and retained the classification lesson that private names such as
 `#x` are not ordinary lexical references to `x`. Current result: **491 pass / 0
 fail / 27 semantic-only skips** across 518 cases.
+
+## Checkpoint 21 — catch and loop binder migration
+
+No count-only expansion was needed: existing CommonJS catch, classic loop,
+`for-of`, `for-in`, and destructuring cases acted as the migration contract. Simple
+identifier catches and loop declarations moved to binder identity; destructured
+forms intentionally remain on the legacy bridge. Result remains **491 pass / 0
+fail / 27 semantic-only skips** across 518 cases.
