@@ -25,3 +25,12 @@ Expanded from 454 to **481 cases** with CommonJS live-import update/compound ass
 ## Checkpoint 16 — 511 cases
 
 Expanded again to **511 cases** with TSX generic arrows nested inside JSX expressions, string/computed enums, nested/dotted namespaces, parameter-property variants, `satisfies`/`as const`, mapped/conditional/template-literal types, import attributes and malformed counterparts. Current tscc v0.15.0 result: **483 pass / 0 fail / 28 semantic-only skips**. This checkpoint fixed TSX generic arrows with `extends` inside JSX expression context and import-attribute objects being confused with named import specifiers.
+
+## Checkpoint 17 — first binder-backed production transform
+
+Added `cjs-import-function-var-shadow` after the bounded binder exposed a gap in
+the legacy CommonJS live-import shadow-range heuristic: a function-local `var`
+reference was rewritten as an imported live binding. The binder now protects the
+ordinary identifier subset while legacy handling remains for unsupported binding
+forms. Current result: **485 pass / 0 fail / 27 semantic-only skips** across 512
+cases.
