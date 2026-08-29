@@ -108,3 +108,7 @@ test philosophy, production-gate responsibilities, and the living roadmap.
 CP2 adds `feature-matrix.json` as the machine-readable external evidence map.
 Run `python3 validate_feature_matrix.py` to verify its schema, retained case
 count, unique families, states, and every named case against the corpus.
+
+CP8/TC4 hardens internal malformed-input recovery and adds a focused deterministic
+parser-budget test. The 519-case external compatibility contract and its
+492/0/27 result remain unchanged; no new TypeScript support family is claimed.
