@@ -68,9 +68,10 @@ version. It is reference-classification drift, not an observed tscc runtime or
 emit mismatch. The inherited checkpoint with an earlier reference compiler was
 483 pass, zero fail, and 28 skip.
 
-The top-level README still says 265 cases and is therefore stale. Prefer deriving
-or reporting current totals rather than maintaining a timeless manual count. The
-runner currently resolves `tsc` from `PATH`, so exact reproduction requires
+At that historical reconciliation point the top-level README still said 265
+cases. The current handover now records the retained 519-case baseline. Prefer
+deriving or checkpointing totals rather than maintaining an unqualified timeless
+count. The runner still resolves `tsc` from `PATH`, so exact reproduction requires
 pinning it externally until the suite gains an explicit version policy.
 
 ## Synchronization
