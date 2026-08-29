@@ -1,5 +1,13 @@
 # tscc regression-suite handover
 
+## CP3/TC1 coordination (2026-08-30)
+
+The compiler now retains a durable per-file compilation unit through output
+commit. This is an ownership-only checkpoint: the external 519-case contract and
+its 492 pass / 0 fail / 27 intentional skip baseline are unchanged. The focused
+lifecycle invariant lives in the compiler repository; this suite remains the
+black-box behavior gate.
+
 This repository is the standalone compiler-agnostic black-box corpus for tscc.
 It should answer whether an arbitrary candidate executable implements the
 externally observable TypeScript-to-JavaScript behavior the project claims.
