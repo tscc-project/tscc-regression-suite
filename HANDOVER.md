@@ -8,6 +8,9 @@ its 492 pass / 0 fail / 27 intentional skip baseline are unchanged. The focused
 lifecycle invariant lives in the compiler repository; this suite remains the
 black-box behavior gate.
 
+CP4/TC2 replaces tscc's duplicate production traversal with one `ProgramGraph`.
+The independent 519-case behavior contract remains the parity gate.
+
 This repository is the standalone compiler-agnostic black-box corpus for tscc.
 It should answer whether an arbitrary candidate executable implements the
 externally observable TypeScript-to-JavaScript behavior the project claims.
