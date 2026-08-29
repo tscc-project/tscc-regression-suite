@@ -14,9 +14,9 @@ The independent 519-case behavior contract remains the parity gate.
 CP5/TC3 adds durable syntax IDs, spans and recovery nodes without changing the
 external contract. The 519-case corpus remains the behavior parity gate.
 
-CP19/TC8A adds canonical object-shape infrastructure only. The 525-case external
-contract remains 499 pass / 0 fail / 26 intentional skips; CP20 owns the first
-source-visible object/property cases.
+CP19/TC8A adds canonical object-shape infrastructure only. CP20/TC8B promotes
+missing-required-property and readonly-write cases: the 525-case external
+contract is now 501 pass / 0 fail / 24 intentional skips.
 
 This repository is the standalone compiler-agnostic black-box corpus for tscc.
 It should answer whether an arbitrary candidate executable implements the
@@ -26,8 +26,8 @@ externally observable TypeScript-to-JavaScript behavior the project claims.
 
 - Runner: `run.py --tscc /absolute/path/to/tscc`.
 - Corpus: `cases.json`.
-- Current retained checkpoint: 521 cases; 495 pass, zero fail, 26
-  semantic-checker-only skips after bounded function-signature checking.
+- Current retained checkpoint: 525 cases; 501 pass, zero fail, 24
+  semantic-checker-only skips after bounded object/property checking.
 - Oracles: TypeScript `tsc --noCheck`, full `tsc` for semantic-only
   classification, and Node for runtime cases.
 
