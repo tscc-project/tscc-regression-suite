@@ -11,6 +11,9 @@ black-box behavior gate.
 CP4/TC2 replaces tscc's duplicate production traversal with one `ProgramGraph`.
 The independent 519-case behavior contract remains the parity gate.
 
+CP5/TC3 adds durable syntax IDs, spans and recovery nodes without changing the
+external contract. The 519-case corpus remains the behavior parity gate.
+
 This repository is the standalone compiler-agnostic black-box corpus for tscc.
 It should answer whether an arbitrary candidate executable implements the
 externally observable TypeScript-to-JavaScript behavior the project claims.
