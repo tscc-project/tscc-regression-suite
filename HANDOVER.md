@@ -171,3 +171,10 @@ matrices must remain byte-for-byte synchronized with the compiler repository.
 
 Four semantic cases raise the corpus to 543 and 519/0/24. They prove callable
 variable argument and arity diagnostics in standalone, branch and throw contexts.
+
+## CP34 callable inference checkpoint (2026-08-30)
+
+Six cases raise the corpus to 549 and 525/0/24. They cover inferred arrow and
+function-expression identities, inferred argument/result diagnostics, and
+contextual optional/default/rest parameter behavior. Nested inline callbacks
+remain an explicit future case family.
