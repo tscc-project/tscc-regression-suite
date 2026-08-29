@@ -90,3 +90,7 @@ See `docs/handover/TESTING.md` and `docs/handover/ROADMAP.md`.
 Detailed suite history lives at
 `docs/handover/CONTRACT-HISTORY.md`, including runtime/differential
 test philosophy, production-gate responsibilities, and the living roadmap.
+
+CP2 adds `feature-matrix.json` as the machine-readable external evidence map.
+Run `python3 validate_feature_matrix.py` to verify its schema, retained case
+count, unique families, states, and every named case against the corpus.
