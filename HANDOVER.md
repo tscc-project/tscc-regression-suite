@@ -119,3 +119,7 @@ under Node and JS++, and requires both to match an explicit expected completion
 value. Its built-in anti-agreement self-test proves equal-but-wrong outputs fail.
 These cases are test-only intersection evidence and do not change the 519-case
 normal compatibility count.
+
+CP10 changes internal declaration/scope ownership without changing the 519-case
+external compatibility count. Its focused binder evidence covers arrows, flat
+destructuring, class names and hoisted function identity.
