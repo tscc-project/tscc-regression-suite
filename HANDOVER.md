@@ -14,6 +14,10 @@ The independent 519-case behavior contract remains the parity gate.
 CP5/TC3 adds durable syntax IDs, spans and recovery nodes without changing the
 external contract. The 519-case corpus remains the behavior parity gate.
 
+CP19/TC8A adds canonical object-shape infrastructure only. The 525-case external
+contract remains 499 pass / 0 fail / 26 intentional skips; CP20 owns the first
+source-visible object/property cases.
+
 This repository is the standalone compiler-agnostic black-box corpus for tscc.
 It should answer whether an arbitrary candidate executable implements the
 externally observable TypeScript-to-JavaScript behavior the project claims.
