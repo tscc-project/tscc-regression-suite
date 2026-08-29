@@ -19,7 +19,11 @@ reviews compiler priorities and public support claims.
 8. Use the corpus under sanitized candidates and future fuzz/generated discovery.
 9. Keep website support claims traceable to suite evidence.
 
+CP32 records the first contextual callable-expression contract at 539 cases and
+515/0/24. Future callable expansion should add standalone expression-statement,
+inference, optional/rest contextual parameter, overload and generic evidence as
+each bounded compiler slice becomes real.
+
 After production, new language support expands the contract, TypeScript releases
 trigger reference review, production defects become minimized cases, and
 performance optimizations must pass semantic gates before acceptance.
-

@@ -159,3 +159,10 @@ Expression typing now consumes retained nodes, and callable signatures are
 canonical type identities. These are internal ownership/model checkpoints; the
 533-case observable contract remains 509/0/24 until CP32 enables callable
 variables and contextual function expressions.
+
+## CP32 callable-expression checkpoint (2026-08-30)
+
+Six cases raise the corpus to 539 cases at 515 pass, zero fail and 24 skips.
+They cover arrow and function-expression runtime behavior plus callable-variable
+argument/arity and contextual-return diagnostics. The mirrored corpus and feature
+matrices must remain byte-for-byte synchronized with the compiler repository.
