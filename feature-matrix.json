@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "candidate": "tscc",
-  "case_count": 559,
+  "case_count": 563,
   "dimensions": ["accept", "emit", "runtime", "diagnostic", "project"],
   "families": [
     {"id":"type-erasure","state":"covered","cases":["basic-variable","interface-erasure","type-alias-erasure"]},
@@ -9,7 +9,7 @@
     {"id":"tsx-preserve","state":"covered","cases":["tsx-basic-preserve","tsx-generic-arrow-extends","tsx-unclosed-tag-invalid"]},
     {"id":"commonjs","state":"covered","cases":["cjs-live-export-getter","cjs-live-import-compound-assignment","cjs-live-import-destructured-param-shadow"]},
     {"id":"primitive-checking","state":"partial","cases":["semantic-type-mismatch","semantic-bound-direct-assignment-mismatch","semantic-const-direct-reassignment","semantic-literal-union-mismatch","semantic-primitive-union-mismatch","semantic-narrowed-branch-mismatch","semantic-narrowing-restoration"]},
-    {"id":"function-types","state":"partial","cases":["semantic-call-type","semantic-call-arity","semantic-return-type","callable-variable-arrow-runtime","contextual-function-expression-runtime","semantic-callable-variable-argument","semantic-callable-variable-arity","semantic-contextual-arrow-return","semantic-contextual-function-return","semantic-callable-statement-argument","semantic-callable-statement-arity","semantic-callable-branch-argument","semantic-callable-throw-argument","inferred-arrow-callable-runtime","inferred-function-callable-runtime","contextual-optional-callable-runtime","contextual-rest-callable-runtime","semantic-inferred-callable-argument","semantic-inferred-callable-result","contextual-inline-arrow-runtime","contextual-inline-function-runtime","semantic-contextual-callback-return","semantic-contextual-callback-parameter"]},
+    {"id":"function-types","state":"partial","cases":["semantic-call-type","semantic-call-arity","semantic-return-type","callable-variable-arrow-runtime","contextual-function-expression-runtime","semantic-callable-variable-argument","semantic-callable-variable-arity","semantic-contextual-arrow-return","semantic-contextual-function-return","semantic-callable-statement-argument","semantic-callable-statement-arity","semantic-callable-branch-argument","semantic-callable-throw-argument","inferred-arrow-callable-runtime","inferred-function-callable-runtime","contextual-optional-callable-runtime","contextual-rest-callable-runtime","semantic-inferred-callable-argument","semantic-inferred-callable-result","contextual-inline-arrow-runtime","contextual-inline-function-runtime","semantic-contextual-callback-return","semantic-contextual-callback-parameter","parenthesized-contextual-callback-runtime","object-contextual-callback-runtime","semantic-parenthesized-contextual-callback","semantic-object-contextual-callback"]},
     {"id":"object-types","state":"partial","cases":["semantic-missing-property","semantic-readonly-write","semantic-nested-object-missing","nested-object-property-read","named-object-alias-runtime","merged-interface-runtime","semantic-named-object-mismatch","semantic-merged-interface-readonly","callable-object-method-runtime","callable-object-property-runtime","interface-inheritance-runtime","semantic-callable-member-argument","semantic-callable-member-arity","semantic-interface-inherited-required"]},
     {"id":"module-types","state":"planned","cases":["semantic-type-only-runtime-use"]}
   ]

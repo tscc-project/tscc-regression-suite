@@ -191,3 +191,8 @@ both feature matrices byte-for-byte mirrored with the compiler repository.
 Six cases raise the corpus to 559 and 535/0/24. They cover method and function-
 property calls, interface inheritance, member argument/arity diagnostics and
 inherited required properties.
+
+## CP37 nested expression checkpoint (2026-08-29)
+
+Four cases raise the corpus to 563 and 539/0/24. They cover parenthesized and
+object-property contextual callbacks in runtime and semantic-error forms.
