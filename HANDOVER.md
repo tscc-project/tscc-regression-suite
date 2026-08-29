@@ -166,3 +166,8 @@ Six cases raise the corpus to 539 cases at 515 pass, zero fail and 24 skips.
 They cover arrow and function-expression runtime behavior plus callable-variable
 argument/arity and contextual-return diagnostics. The mirrored corpus and feature
 matrices must remain byte-for-byte synchronized with the compiler repository.
+
+## CP33 whole-program call checkpoint (2026-08-30)
+
+Four semantic cases raise the corpus to 543 and 519/0/24. They prove callable
+variable argument and arity diagnostics in standalone, branch and throw contexts.
