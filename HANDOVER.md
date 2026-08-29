@@ -131,3 +131,6 @@ function expressions and contextual typing remain outside this slice.
 
 CP14/TC7A expands the contract to 523 cases and 497/0/26 by promoting literal
 union and primitive union mismatch diagnostics. Flow narrowing remains separate.
+
+CP17/TC7B expands the contract to 525 cases and 499/0/26 with guarded-branch
+mismatch and post-branch restoration evidence.
