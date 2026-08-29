@@ -138,3 +138,7 @@ union and primitive union mismatch diagnostics. Flow narrowing remains separate.
 
 CP17/TC7B expands the contract to 525 cases and 499/0/26 with guarded-branch
 mismatch and post-branch restoration evidence.
+## CP22 / TC8C (2026-08-30)
+
+Four nested/excess-policy cases raise the corpus to 529 cases: 505 pass, zero
+fail and 24 intentional skips.
