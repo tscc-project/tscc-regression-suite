@@ -112,3 +112,10 @@ count, unique families, states, and every named case against the corpus.
 CP8/TC4 hardens internal malformed-input recovery and adds a focused deterministic
 parser-budget test. The 519-case external compatibility contract and its
 492/0/27 result remain unchanged; no new TypeScript support family is claimed.
+
+CP9/INT0 adds `run_interop.py` and six separately classified fixtures. The runner
+uses only the public tscc and JS++ CLIs, executes emitted JavaScript independently
+under Node and JS++, and requires both to match an explicit expected completion
+value. Its built-in anti-agreement self-test proves equal-but-wrong outputs fail.
+These cases are test-only intersection evidence and do not change the 519-case
+normal compatibility count.

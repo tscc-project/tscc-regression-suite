@@ -17,4 +17,9 @@ for family in matrix["families"]:
     assert family["cases"]
     missing = set(family["cases"]) - names
     assert not missing, f"{family['id']}: unknown cases {sorted(missing)}"
-print(f"tscc external feature matrix valid: {len(ids)} families, {len(cases)} cases")
+interop = json.loads((root / "interop/cases.json").read_text())
+interop_ids = [case["id"] for case in interop["cases"]]
+assert interop["schema_version"] == 1
+assert len(interop_ids) == len(set(interop_ids)) and interop_ids
+assert all(case.get("source") and "expect" in case for case in interop["cases"])
+print(f"tscc external feature matrix valid: {len(ids)} families, {len(cases)} cases, {len(interop_ids)} interop cases")
