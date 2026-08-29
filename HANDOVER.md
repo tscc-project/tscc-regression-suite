@@ -196,3 +196,8 @@ inherited required properties.
 
 Four cases raise the corpus to 563 and 539/0/24. They cover parenthesized and
 object-property contextual callbacks in runtime and semantic-error forms.
+
+## CP38 index/call signature checkpoint (2026-08-29)
+
+Six cases raise the corpus to 569 and 545/0/24. They cover string-indexed object
+values and callable objects plus index-value, argument, arity and result errors.
