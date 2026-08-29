@@ -26,7 +26,7 @@ externally observable TypeScript-to-JavaScript behavior the project claims.
 
 - Runner: `run.py --tscc /absolute/path/to/tscc`.
 - Corpus: `cases.json`.
-- Current retained checkpoint: 525 cases; 501 pass, zero fail, 24
+- Current retained checkpoint: 533 cases; 509 pass, zero fail, 24
   semantic-checker-only skips after bounded object/property checking.
 - Oracles: TypeScript `tsc --noCheck`, full `tsc` for semantic-only
   classification, and Node for runtime cases.
@@ -146,3 +146,9 @@ fail and 24 intentional skips.
 
 The 529-case external contract remains 505/0/24. CP24 changes checker ownership:
 expression spans and significant tokens are interned in the compilation unit.
+
+## CP28 reusable object declarations (2026-08-30)
+
+Four alias/interface cases raise the corpus to 533 cases: 509 pass, zero fail
+and 24 skips. They cover nested aliases, compatible interface merging, named-path
+mismatch diagnostics and readonly metadata across merged declarations.
