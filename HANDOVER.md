@@ -185,3 +185,9 @@ Four cases raise the corpus to 553 and 529/0/24. Runtime cases cover inline arro
 and function callbacks; semantic cases cover contextual result and parameter
 diagnostics and assert the invalid return is reported once. Keep these cases and
 both feature matrices byte-for-byte mirrored with the compiler repository.
+
+## CP36 callable object checkpoint (2026-08-29)
+
+Six cases raise the corpus to 559 and 535/0/24. They cover method and function-
+property calls, interface inheritance, member argument/arity diagnostics and
+inherited required properties.
