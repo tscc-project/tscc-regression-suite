@@ -142,3 +142,7 @@ mismatch and post-branch restoration evidence.
 
 Four nested/excess-policy cases raise the corpus to 529 cases: 505 pass, zero
 fail and 24 intentional skips.
+## CP24 expression-identity checkpoint (2026-08-30)
+
+The 529-case external contract remains 505/0/24. CP24 changes checker ownership:
+expression spans and significant tokens are interned in the compilation unit.
