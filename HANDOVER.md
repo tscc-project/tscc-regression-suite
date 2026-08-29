@@ -152,3 +152,10 @@ expression spans and significant tokens are interned in the compilation unit.
 Four alias/interface cases raise the corpus to 533 cases: 509 pass, zero fail
 and 24 skips. They cover nested aliases, compatible interface merging, named-path
 mismatch diagnostics and readonly metadata across merged declarations.
+
+## CP30–CP31 callable foundation (2026-08-30)
+
+Expression typing now consumes retained nodes, and callable signatures are
+canonical type identities. These are internal ownership/model checkpoints; the
+533-case observable contract remains 509/0/24 until CP32 enables callable
+variables and contextual function expressions.
