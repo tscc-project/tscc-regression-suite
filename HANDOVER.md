@@ -178,3 +178,10 @@ Six cases raise the corpus to 549 and 525/0/24. They cover inferred arrow and
 function-expression identities, inferred argument/result diagnostics, and
 contextual optional/default/rest parameter behavior. Nested inline callbacks
 remain an explicit future case family.
+
+## CP35 nested callback checkpoint (2026-08-29)
+
+Four cases raise the corpus to 553 and 529/0/24. Runtime cases cover inline arrow
+and function callbacks; semantic cases cover contextual result and parameter
+diagnostics and assert the invalid return is reported once. Keep these cases and
+both feature matrices byte-for-byte mirrored with the compiler repository.
