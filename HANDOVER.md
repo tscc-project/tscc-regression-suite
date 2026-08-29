@@ -22,8 +22,8 @@ externally observable TypeScript-to-JavaScript behavior the project claims.
 
 - Runner: `run.py --tscc /absolute/path/to/tscc`.
 - Corpus: `cases.json`.
-- Current retained checkpoint: 519 cases; 492 pass, zero fail, 27
-  semantic-checker-only skips after bounded assignment and mutability checking.
+- Current retained checkpoint: 521 cases; 495 pass, zero fail, 26
+  semantic-checker-only skips after bounded function-signature checking.
 - Oracles: TypeScript `tsc --noCheck`, full `tsc` for semantic-only
   classification, and Node for runtime cases.
 
@@ -123,3 +123,8 @@ normal compatibility count.
 CP10 changes internal declaration/scope ownership without changing the 519-case
 external compatibility count. Its focused binder evidence covers arrows, flat
 destructuring, class names and hoisted function identity.
+
+CP13/TC6 expands the contract to 521 cases. Three function-signature cases now
+exercise typed ordinary-function arguments, exact bounded arity and annotated
+return expressions through tscc. Optional/rest parameters, overloads, generics,
+function expressions and contextual typing remain outside this slice.

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "candidate": "tscc",
-  "case_count": 519,
+  "case_count": 521,
   "dimensions": ["accept", "emit", "runtime", "diagnostic", "project"],
   "families": [
     {"id":"type-erasure","state":"covered","cases":["basic-variable","interface-erasure","type-alias-erasure"]},
@@ -9,7 +9,7 @@
     {"id":"tsx-preserve","state":"covered","cases":["tsx-basic-preserve","tsx-generic-arrow-extends","tsx-unclosed-tag-invalid"]},
     {"id":"commonjs","state":"covered","cases":["cjs-live-export-getter","cjs-live-import-compound-assignment","cjs-live-import-destructured-param-shadow"]},
     {"id":"primitive-checking","state":"partial","cases":["semantic-type-mismatch","semantic-bound-direct-assignment-mismatch","semantic-const-direct-reassignment"]},
-    {"id":"function-types","state":"planned","cases":["semantic-call-type"]},
+    {"id":"function-types","state":"partial","cases":["semantic-call-type","semantic-call-arity","semantic-return-type"]},
     {"id":"object-types","state":"planned","cases":["semantic-missing-property","semantic-readonly-write"]},
     {"id":"module-types","state":"planned","cases":["semantic-type-only-runtime-use"]}
   ]
