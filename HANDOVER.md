@@ -128,3 +128,6 @@ CP13/TC6 expands the contract to 521 cases. Three function-signature cases now
 exercise typed ordinary-function arguments, exact bounded arity and annotated
 return expressions through tscc. Optional/rest parameters, overloads, generics,
 function expressions and contextual typing remain outside this slice.
+
+CP14/TC7A expands the contract to 523 cases and 497/0/26 by promoting literal
+union and primitive union mismatch diagnostics. Flow narrowing remains separate.
