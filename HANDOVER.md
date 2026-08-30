@@ -231,3 +231,7 @@ Keep emitted-syntax support distinct from semantic-checker support.
 
 TCP0 adds `validate_preview_contract.py`, pinning the manifest and both frozen
 project paths through the compiler aggregate gate.
+
+TCP1 is compiler-owned focused evidence. External semantic cases continue
+matching diagnostic text, while the compiler gate pins codes, ordering, missing
+option values and exit status.
