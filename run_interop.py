@@ -31,7 +31,7 @@ def main():
     node_driver="const fs=require('fs');const v=(0,eval)(fs.readFileSync(process.argv[1],'utf8'));console.log(typeof v==='function'?'[function]':String(v));"
     for case in cases:
         with tempfile.TemporaryDirectory(prefix="tscc-jspp-") as td:
-            td=Path(td);source=td/"case.ts";output=td/"out";source.write_text(case["source"]);output.mkdir()
+            td=Path(td);source=td/"case.ts";output=td/"out";source.write_text((root/case["source_file"]).resolve().read_text() if "source_file" in case else case["source"]);output.mkdir()
             compiled=run([args.tscc,"--pretty","false","--noResolve","--outDir",str(output),str(source)])
             emitted=output/"case.js"
             if not compiled or compiled.returncode or not emitted.exists():failed+=1;print(f"FAIL {case['id']}: tscc compile failed",file=sys.stderr);continue

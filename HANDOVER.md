@@ -124,6 +124,12 @@ value. Its built-in anti-agreement self-test proves equal-but-wrong outputs fail
 These cases are test-only intersection evidence and do not change the 519-case
 normal compatibility count.
 
+TCP4 adds the seventh, frozen compiler-preview case by loading
+`tscc/examples/compiler-preview/jspp-intersection.ts`. It pins a module-free
+typed object/tuple/function source compiled by production TSCC and executed
+independently by Node and JS++. The result is 7/7 and does not claim modules or
+general JavaScript compatibility.
+
 CP10 changes internal declaration/scope ownership without changing the 519-case
 external compatibility count. Its focused binder evidence covers arrows, flat
 destructuring, class names and hoisted function identity.

@@ -4,5 +4,6 @@
  {"id":"typed-control-flow","source":"let sum:number=0;for(let i:number=0;i<8;i=i+1){if(i===2)continue;if(i===6)break;sum=sum+i;}sum;","expect":"13"},
  {"id":"typed-closure","source":"function outer(x:number){return function(y:number){return x+y;};}const add=outer(40);add(2);","expect":"42"},
  {"id":"interface-erasure","source":"interface Marker {value:number} const value:number=42;value;","expect":"42"},
- {"id":"generic-erasure","source":"function identity<T>(value:T):T{return value;}identity<number>(42);","expect":"42"}
+ {"id":"generic-erasure","source":"function identity<T>(value:T):T{return value;}identity<number>(42);","expect":"42"},
+ {"id":"compiler-preview","source_file":"../tscc/examples/compiler-preview/jspp-intersection.ts","expect":"42","frozen":true}
 ]}
