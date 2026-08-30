@@ -235,3 +235,8 @@ project paths through the compiler aggregate gate.
 TCP1 is compiler-owned focused evidence. External semantic cases continue
 matching diagnostic text, while the compiler gate pins codes, ordering, missing
 option values and exit status.
+
+TCP2 is pinned by the compiler-owned project/output gate: frozen project runtime,
+repeat-build hashes, default partial emission, all-or-none `noEmitOnError`, exact
+target rejection and unknown-config rejection. The external 579-case corpus
+remains the broad compatibility wall.
