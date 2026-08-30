@@ -251,3 +251,17 @@ TCP2 is pinned by the compiler-owned project/output gate: frozen project runtime
 repeat-build hashes, default partial emission, all-or-none `noEmitOnError`, exact
 target rejection and unknown-config rejection. The external 579-case corpus
 remains the broad compatibility wall.
+
+## Next evidence campaign (2026-08-30)
+
+The compiler preview campaign is complete at 579 cases with 555/0/24, plus the
+separate 7/7 Node/JS++ intersection. This suite's next planned role is TCP6A: own
+a manifest and reproducible classifier for pinned, license-compatible real small
+projects. Results must distinguish parser, binder, checker, module resolution,
+configuration, emit and runtime failures. Keep that trial corpus separate from
+the ordinary compatibility corpus.
+
+PC0V Valgrind work will be performed later by DeepSeek on Nick's Ubuntu machine;
+record it only after it actually runs. EP6A selected Test262 belongs to the JS++
+suite. The existing intersection remains unchanged unless an explicitly reviewed
+case is added.
