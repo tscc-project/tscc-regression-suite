@@ -228,3 +228,6 @@ tuple literal mismatches plus exact tuple access typing.
 TCP0-TCP5 require a frozen multi-file positive project, a negative diagnostic
 sibling, output-policy evidence and reference-runtime/JS++ intersection results.
 Keep emitted-syntax support distinct from semantic-checker support.
+
+TCP0 adds `validate_preview_contract.py`, pinning the manifest and both frozen
+project paths through the compiler aggregate gate.
