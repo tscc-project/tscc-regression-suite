@@ -130,6 +130,11 @@ typed object/tuple/function source compiled by production TSCC and executed
 independently by Node and JS++. The result is 7/7 and does not claim modules or
 general JavaScript compatibility.
 
+TCP5 retains the 579-case TypeScript corpus at 555/0/24 and the independent
+runtime intersection at 7/7. The candidate gate also consumes this suite's
+contract validator; representative projects, packaging, safety and fuzz evidence
+remain owned by the TSCC repository.
+
 CP10 changes internal declaration/scope ownership without changing the 519-case
 external compatibility count. Its focused binder evidence covers arrows, flat
 destructuring, class names and hoisted function identity.

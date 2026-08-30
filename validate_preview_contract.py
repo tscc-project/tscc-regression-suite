@@ -10,5 +10,7 @@ assert set(contract["module_modes"]) == {"preserve", "esnext", "commonjs"}
 for key in ("positive_project", "negative_project"):
     assert (repo / contract[key]).is_file()
 assert (repo / contract["jspp_intersection_source"]).is_file()
+assert (repo / contract["candidate_evidence"]).is_file()
+assert contract["status"] == "preview-candidate-qualified"
 assert "package-node-modules-resolution" in contract["excluded"]
 print("tscc compiler preview contract valid")
