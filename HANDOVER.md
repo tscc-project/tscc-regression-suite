@@ -222,3 +222,9 @@ now run through retained semantic roots; the baseline remains 549/0/24.
 Six cases raise the corpus to 579 and 555/0/24. Runtime cases cover typed array
 reads/length and heterogeneous tuple positions; semantic cases cover array and
 tuple literal mismatches plus exact tuple access typing.
+
+## Compiler preview acceptance role (2026-08-30)
+
+TCP0-TCP5 require a frozen multi-file positive project, a negative diagnostic
+sibling, output-policy evidence and reference-runtime/JS++ intersection results.
+Keep emitted-syntax support distinct from semantic-checker support.
