@@ -201,3 +201,8 @@ object-property contextual callbacks in runtime and semantic-error forms.
 
 Six cases raise the corpus to 569 and 545/0/24. They cover string-indexed object
 values and callable objects plus index-value, argument, arity and result errors.
+
+## CP39 annotation parser decomposition (2026-08-30)
+
+No corpus cases changed. The compiler's annotation grammar was decomposed while
+all 569 cases remained 545/0/24. Preserve that baseline for CP40 computed access.
