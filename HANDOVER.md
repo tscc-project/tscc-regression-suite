@@ -206,3 +206,8 @@ values and callable objects plus index-value, argument, arity and result errors.
 
 No corpus cases changed. The compiler's annotation grammar was decomposed while
 all 569 cases remained 545/0/24. Preserve that baseline for CP40 computed access.
+
+## CP40 computed element-access checkpoint (2026-08-30)
+
+Four cases raise the corpus to 573 and 549/0/24. They cover exact string keys,
+dynamic string and number index signatures, and rejection of a boolean key.
