@@ -211,3 +211,8 @@ all 569 cases remained 545/0/24. Preserve that baseline for CP40 computed access
 
 Four cases raise the corpus to 573 and 549/0/24. They cover exact string keys,
 dynamic string and number index signatures, and rejection of a boolean key.
+
+## CP41 durable statement expression ownership (2026-08-30)
+
+No corpus cases changed. Existing standalone, branch and throw callable cases
+now run through retained semantic roots; the baseline remains 549/0/24.
