@@ -216,3 +216,9 @@ dynamic string and number index signatures, and rejection of a boolean key.
 
 No corpus cases changed. Existing standalone, branch and throw callable cases
 now run through retained semantic roots; the baseline remains 549/0/24.
+
+## CP42 array and tuple checkpoint (2026-08-30)
+
+Six cases raise the corpus to 579 and 555/0/24. Runtime cases cover typed array
+reads/length and heterogeneous tuple positions; semantic cases cover array and
+tuple literal mismatches plus exact tuple access typing.
