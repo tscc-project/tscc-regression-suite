@@ -265,3 +265,10 @@ PC0V Valgrind work will be performed later by DeepSeek on Nick's Ubuntu machine;
 record it only after it actually runs. EP6A selected Test262 belongs to the JS++
 suite. The existing intersection remains unchanged unless an explicitly reviewed
 case is added.
+
+## Post-preview evidence-tool repair (2026-09-09)
+
+The feature-matrix validator accepts exactly one of inline `source` or a
+repository-relative `source_file` for each interoperability case. Frozen project
+fixtures use `source_file`; the validator resolves and verifies that path rather
+than incorrectly requiring a duplicate inline source string.

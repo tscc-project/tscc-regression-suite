@@ -21,5 +21,11 @@ interop = json.loads((root / "interop/cases.json").read_text())
 interop_ids = [case["id"] for case in interop["cases"]]
 assert interop["schema_version"] == 1
 assert len(interop_ids) == len(set(interop_ids)) and interop_ids
-assert all(case.get("source") and "expect" in case for case in interop["cases"])
+for case in interop["cases"]:
+    assert "expect" in case
+    sources = [key for key in ("source", "source_file") if case.get(key)]
+    assert len(sources) == 1, f"{case['id']}: expected exactly one source or source_file"
+    if sources[0] == "source_file":
+        source_path = (root / case["source_file"]).resolve()
+        assert source_path.is_file(), f"{case['id']}: missing source_file {source_path}"
 print(f"tscc external feature matrix valid: {len(ids)} families, {len(cases)} cases, {len(interop_ids)} interop cases")
