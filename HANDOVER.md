@@ -272,3 +272,11 @@ The feature-matrix validator accepts exactly one of inline `source` or a
 repository-relative `source_file` for each interoperability case. Frozen project
 fixtures use `source_file`; the validator resolves and verifies that path rather
 than incorrectly requiring a duplicate inline source string.
+
+## Pinned oracle environment (2026-09-09)
+
+`package-lock.json` is the canonical JavaScript-side test environment. It pins
+Node 22.22.1 and TypeScript 7.0.2; `tools/node` and `tools/tsc` execute those
+repository-local artifacts, and `check_oracles.py` rejects version drift before
+an aggregate checkpoint. Use `npm ci`, never an unrecorded global TypeScript
+installation, for release-quality corpus results.

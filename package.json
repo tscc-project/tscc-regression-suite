@@ -1,0 +1,13 @@
+{
+  "name": "tscc-regression-oracles",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Pinned JavaScript-side oracles for the TSCC regression contract",
+  "engines": {
+    "node": "22.22.1"
+  },
+  "devDependencies": {
+    "node": "22.22.1",
+    "typescript": "7.0.2"
+  }
+}
