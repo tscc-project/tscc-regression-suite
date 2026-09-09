@@ -26,8 +26,8 @@ externally observable TypeScript-to-JavaScript behavior the project claims.
 
 - Runner: `run.py --tscc /absolute/path/to/tscc`.
 - Corpus: `cases.json`.
-- Current retained checkpoint: 533 cases; 509 pass, zero fail, 24
-  semantic-checker-only skips after bounded object/property checking.
+- Current retained checkpoint: 579 cases; 555 pass, zero fail, 24
+  semantic-checker-only skips at the qualified compiler preview.
 - Oracles: TypeScript `tsc --noCheck`, full `tsc` for semantic-only
   classification, and Node for runtime cases.
 
